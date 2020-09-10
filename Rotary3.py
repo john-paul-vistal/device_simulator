@@ -13,7 +13,7 @@ pos = 9
 while True:
     if cp.switch == False:
         for clock in range(pos,-1,-1):
-            cp.pixels[clock] = (0,255,255)
+            cp.pixels[clock] = (255,255,255)
             time.sleep(0.5)
             cp.pixels[clock] = (0,0,0)
             pos = 9
@@ -25,7 +25,7 @@ while True:
                 break
     else:
         for cclock in range(pos,10,1):
-            cp.pixels[cclock] = (0,255,255)
+            cp.pixels[cclock] = (255,255,255)
             time.sleep(0.5)
             cp.pixels[cclock] = (0,0,0)
             pos = 0
