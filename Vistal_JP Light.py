@@ -15,10 +15,8 @@ from adafruit_circuitplayground import cp
 cp.pixels.auto_write = False
 
 while True:
-    peak = cp.light / 288 * 9
-
+    peak = cp.light / 289 * 9
     color = int(255*cp.light/320)
-
     for i in range(10):
         if i <= peak:
             cp.pixels[i] = (color, color, color)
