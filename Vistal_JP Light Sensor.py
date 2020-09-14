@@ -13,8 +13,10 @@ import time
 from adafruit_circuitplayground import cp
 
 cp.pixels.auto_write = False
+
 while True:
     peak = int(cp.light / 288 * 9)
+    # color = int(255*cp.light/320)
     for i in range(10):
         if i <= peak:
             if peak < 1:
