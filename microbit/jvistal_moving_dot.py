@@ -8,9 +8,11 @@ while True:
         lpat = list(patern)
         if(lpat[i] != ':'):
             lpat[i] = "9"
+        else:
+            continue
         newPat = ''.join(lpat)
         img = Image(str(newPat))
-        time.sleep(.5)
         display.show(img)
+        time.sleep(.5)
 
     
